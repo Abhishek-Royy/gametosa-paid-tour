@@ -276,8 +276,8 @@
                     <div class="img-container">
                         <img src="assests/games/cod_card.png" alt="Call of Duty" class="img-fluid">
                     </div>
-                    <h3 class="text-white mb-3">Call of Duty</h3>
-                    <a href="./game-rgn/registration.php" class="btn btn-neon mt-auto">Register Now</a>
+                    <h3 class="text-white mb-3">Call of Duty Mobile</h3>
+                    <a href="game.php?game=Call of Duty Mobile" class="btn btn-neon mt-auto">Explore Now</a>
                 </div>
             </div>
             
@@ -288,7 +288,7 @@
                         <img src="assests/games/Pubg_card.png" alt="PUBG" class="img-fluid">
                     </div>
                     <h3 class="text-white mb-3">PUBG Mobile</h3>
-                    <a href="./game-rgn/registration.php" class="btn btn-neon mt-auto">Register Now</a>
+                    <a href="game.php?game=PUBG Mobile" class="btn btn-neon mt-auto">Explore Now</a>
                 </div>
             </div>
             
@@ -299,7 +299,7 @@
                         <img src="assests/games/free_fire__card.png" alt="Free Fire" class="img-fluid">
                     </div>
                     <h3 class="text-white mb-3">Free Fire</h3>
-                    <a href="./game-rgn/registration.php" class="btn btn-neon mt-auto">Register Now</a>
+                    <a href="game.php?game=Free Fire" class="btn btn-neon mt-auto">Explore Now</a>
                 </div>
             </div>
 
@@ -310,7 +310,7 @@
                         <img src="assests/games/valorant_card.png" alt="Valorant" class="img-fluid">
                     </div>
                     <h3 class="text-white mb-3">Valorant</h3>
-                    <a href="./game-rgn/registration.php" class="btn btn-neon mt-auto">Register Now</a>
+                    <a href="game.php?game=Valorant" class="btn btn-neon mt-auto">Explore Now</a>
                 </div>
             </div>
 
@@ -321,7 +321,7 @@
                         <img src="assests/games/bgmi_card.png" alt="BGMI" class="img-fluid">
                     </div>
                     <h3 class="text-white mb-3">BGMI</h3>
-                    <a href="./game-rgn/registration.php" class="btn btn-neon mt-auto">Register Now</a>
+                    <a href="game.php?game=BGMI" class="btn btn-neon mt-auto">Explore Now</a>
                 </div>
             </div>
         </div>

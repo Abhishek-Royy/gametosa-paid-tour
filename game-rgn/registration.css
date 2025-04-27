@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: radial-gradient(circle, #1b2735 0%, #090a0f 100%);
+    font-family: 'Orbitron', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .registration-container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 2px solid #00ffe1;
+    border-radius: 20px;
+    padding: 35px 30px;
+    width: 360px;
+    box-shadow: 0 0 10px #00ffe1, 0 0 20px #1bffe3 inset;
+    animation: pulseGlow 3s infinite ease-in-out;
+  }
+  
+  @keyframes pulseGlow {
+    0%, 100% {
+      box-shadow: 0 0 10px #00ffe1, 0 0 20px #1bffe3 inset;
+    }
+    50% {
+      box-shadow: 0 0 12px #00ffe1, 0 0 30px #1bffe3 inset;
+    }
+  }
+  
+  .registration-container h2 {
+    text-align: center;
+    color: #00ffe1;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #aad;
+    font-size: 0.95rem;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #00ffe1;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #00ffe1;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    box-shadow: 0 0 12px #00ffe1;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(45deg, #00ffe1, #006eff);
+    color: #000;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #00ffe1;
+  }
+  
+  .success-message {
+    text-align: center;
+    color: #00ff88;
+    margin-top: 15px;
+    font-size: 1rem;
+    display: none;
+  }
