@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GAMETOSA ESPORTS & GAMING</title>
+    <link rel="shortcut icon" type="image/png" href="./resources/20211128_003053.png">
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="2x1-86hpSL3rJAcPot4jwovqFexBSi5RxKPua8zMYC0" />
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GAMETOSA ESPORTS & GAMING">
+    <meta property="og:description" content="Gametosa is the India's #1 mobile eSports Hosting and gaming platform that is empowering the rapidly rising community of Creators, Youtuber and eSports fans. Come, be part of a thriving community of passionate gamers, die-hard eSports fans and an ever-growing roster of gaming content creators, who are making a living by earning real money on the platform.">
+    <meta property="og:url" content="https://gametosa.com/">
+    <meta name="theme-color" content="#317EFB"/>
+    <meta name="description" content="Gametosa is the India's #1 mobile Esports Hosting and gaming platform.">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slide.css">
+    <!-- <link href="http://fonts.cdnfonts.com/css/lemonmilk" rel="stylesheet"> -->
+    <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poopins", sans-serif;
+    }
+    .ga-main {
+      width: 100%;
+      height: 75vh;
+      background-color: black;
+      color: white;
+      display: flex;
+      padding-inline: 2vw;
+    }
+    .ga-left {
+      width: 50%;
+      height: 100%;
+
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      flex-direction: column;
+      line-height: 55px;
+    }
+    .ga-left > h1 {
+      text-transform: uppercase;
+      font-size: 3vw;
+      width: 80%;
+      font-weight: 700;
+    }
+    .ga-left > h1 > span {
+      color: #38b8dd;
+    }
+    .ga-left > p {
+      font-size: 18px;
+    }
+    .ga-btn {
+      width: 100%;
+      height: auto;
+      /* background-color: #d70000; */
+      margin-top: 10px;
+    }
+    .ga-btn > button {
+      padding-block: 12px;
+      width: 12vw;
+      box-shadow: #2c93a8 0px 10px 36px 0px, #86ccdb 0px 0px 0px 1px;
+      background-color: #000;
+      border-radius: 10px;
+      margin-right: 30px;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      transition: all 300ms ease-in;
+    }
+    .ga-btn > button:hover {
+      background-color: #86ccdb;
+      color: #000;
+      cursor: pointer;
+    }
+
+    .ga-right {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+    }
+
+    .ga-right > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      .ga-main {
+        padding-inline: 0;
+        display: block;
+        height: auto;
+        width: 100%;
+        padding-block: 20vw;
+      }
+      .ga-left {
+        width: 100%;
+        line-height: normal;
+      }
+      .ga-left > h1 {
+        font-size: 12vw;
+        width: 95%;
+        margin: auto;
+      }
+      .ga-left > p {
+        width: 95%;
+        margin: auto;
+        margin-top: 20px;
+      }
+
+      .ga-btn {
+        width: 95%;
+        margin: auto;
+
+        display: flex;
+        margin-top: 25px;
+        height: auto;
+        gap: 20px;
+      }
+      .ga-btn > button {
+        width: 50%;
+        margin-right: 0;
+      }
+      .ga-right {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 9vw;
+      }
+      .ga-right > img {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+      }
+    }
+  </style>
+</head>
+
+<body>
+   <div class="collapseMenu">
+    <div class="cross"></div>
+    <div class="options">
+        <div class="heading">
+            <span>Menu</span>
+        </div>
+        <div class="border"></div>
+        <div class="option">
+            <a href="https://gametosa.com"><span>Home</span></a>
+        </div>
+        <div class="option">
+            <a href="https://gametosa.com/store"><span>Store</span></a>
+        </div>
+        <div class="option">
+            <a href="https://gametosa.com/product"><span>Products</span></a>
+        </div>
+        <div class="option">
+            <a href="../html pages/aboutUs.php">
+                <span>About</span>
+            </a>
+        </div>
+        <div class="option">
+            <a href="../html pages/partnership.php">
+                <span>
+
+                    Partnership
+                </span>
+            </a>
+        </div>
+        <div class="option">
+            <a href="https://gametosa.com/html pages/contact.php">
+                <span>
+                    Contact Us
+                </span>
+            </a>
+        </div>
+        <div class="option">
+            <a href="https://gametosa.com/dashboard/logIn.php">
+                <span>
+                    Log in
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="navbar">
+    <a href="https://gametosa.com"><div class="logo">
+
+    </div></a>
+    <div class="options">
+        <div class="option">
+            <a href="https://gametosa.com">
+                <span>Home</span>
+            </a>
+        </div>
+        <div class="option">
+            <a href="https://gametosa.com/store">
+                <span>Store</span>
+            </a>
+        </div>
+        <div class="option">
+            <a href="https://gametosa.com/product">
+                <span>Products</span>
+            </a>
+        </div>
+        <div class="option">
+            <a href="../html pages/aboutUs.php">
+                <span>About</span></a>
+        </div>
+        <div class="option">
+            <a href="../html pages/partnership.php"><span>Partnership</span></a></div>
+        <div class="option"> <a href="https://gametosa.com/html pages/contact.php">
+                <span>Contact Us</span>
+            </a></div>
+        <div class="option">
+            <a href="https://gametosa.com/dashboard/logIn.php">
+                <span>
+                    Log in
+                </span>
+            </a>
+        </div>
+        <div class="option">
+           
+                <a style="z-index:0;" href="https://play.google.com/store/apps/details?id=gametosa.com"><span
+                    class="download">Download Now</span></a></div>
+                    <!-- <div class="option login"><img src="./resources/step1.png" alt=""></div> -->
+            
+    </div>
+
+    <div class="phoneView">
+
+        <div class="downloadBtn">
+            <a href="https://play.google.com/store/apps/details?id=gametosa.com">
+
+                <span style="font-size: 10px;">Download Now</span>
+            </a>
+        </div>
+        <div class="menuBtn">
+            <div class="strip"></div>
+            <div class="strip"></div>
+            <div class="strip"></div>
+        </div>
+    </div>
+</div>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-17GK6HDFK6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-17GK6HDFK6');
+</script>    <!-- <header class="header">
+        <div class="box" data-aos="fade-up">
+            <div class="heading">
+                <h1>
+                    Turn Your Passion Into Your Career! Get started With Us Today
+                </h1>
+            </div>
+            <div class="btns">
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdDxBZrUN993Gfkxa3k6uy1P0YForrqSGBE--5YTQQ2SDygFQ/viewform?usp=sf_link">
+
+                    <div class="btn">
+                        <span>For Creators</span>
+
+                    </div>
+                </a>
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdayGWKth-vg9Mhzbz8hC6NbLJFFZpFTMQorLDcdTnPF6oyhA/viewform?usp=sf_link">
+                    <div class="btn">
+                        <span>For Organization</span>
+
+                    </div>
+                </a>
+            </div>
+            <div class="img" style="background-image: url('./resources/MAIN.webp');">
+            </div>
+        </div>
+
+        <div class="border"></div>
+    </header> -->
+    <!-- new header -->
+    <div class="ga-main">
+      <div class="ga-left">
+        <h1>Turn <span> Your Passion</span></h1>
+        <h1>Into <span>Your Career!</span></h1>
+        <h1>Get started With Us Today</h1>
+        <p>Grow in an Esports ecosystem with gamers & organizers alike</p>
+
+        <div class="ga-btn">
+          <button><a href="https://docs.google.com/forms/d/e/1FAIpQLSdDxBZrUN993Gfkxa3k6uy1P0YForrqSGBE--5YTQQ2SDygFQ/viewform?usp=sf_link">For Creator</a></button>
+          <button><a href="https://docs.google.com/forms/d/e/1FAIpQLSdayGWKth-vg9Mhzbz8hC6NbLJFFZpFTMQorLDcdTnPF6oyhA/viewform?usp=sf_link">For Organizations</a></button>
+        </div>
+      </div>
+      <div class="ga-right">
+        <img
+          src="https://gametosa.onrender.com/assets/MAIN-CeCQMQ5t.webp"
+          alt=""
+        />
+      </div>
+    </div>
+    </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sliderBox">
+        <div class="sliderBtns">
+            <div class="sliderBtn left left1"></div>
+            <div class="sliderBtn right right1"></div>
+    
+        </div>
+        <div class="descSliderHeading"><h1 style="margin-top:20px;">For Gamers</h1></div>
+        <div class="descSlider descSlide1">
+            <div class="slide slide1">
+                <div class="slideLeft">
+                    <div class="slideLeftPhoneImage">
+
+                    </div>
+                </div>
+                <div class="slideRight">
+                    <div class="sildeHaeding">
+                        <span>Instant Games</span>
+                    </div>
+                    <div class="slideInfo">
+                        <span>An HTML5 cross Gaming platform where you don't need to download games, it's available inapp. The more you play the more you can earn.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide1">
+                <div class="slideLeft">
+                    <div class="slideLeftPhoneImage">
+                        
+                    </div>
+                </div>
+                <div class="slideRight">
+                    <div class="sildeHaeding">
+                        <span>Tournaments</span>
+                    </div>
+                    <div class="slideInfo">
+                        <span>Gametosa brings gamer together on one platform to horn their gaming skills. Compete against each other towards glory to get rewarded.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide1">
+                <div class="slideLeft">
+                    <div class="slideLeftPhoneImage">
+                        
+                    </div>
+                </div>
+                <div class="slideRight">
+                    <div class="sildeHaeding">
+                        <span>Offerwall</span>
+                    </div>
+                    <div class="slideInfo">
+                        <span>Gametosa brings opportunity For the Gamer and the user to monitize and earn more revenue by doing simple tasks to earn more rewards.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide1">
+                <div class="slideLeft">
+                    <div class="slideLeftPhoneImage">
+                        
+                    </div>
+                </div>
+                <div class="slideRight">
+                    <div class="sildeHaeding">
+                        <span>Guilds</span>
+                    </div>
+                    <div class="slideInfo">
+                        <span>Exclusive features for the Guilds and for their fans. Community can now grow their Fan by using Gametosa Guilds features.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide1">
+                <div class="slideLeft">
+                    <div class="slideLeftPhoneImage">
+                        
+                    </div>
+                </div>
+                <div class="slideRight">
+                    <div class="sildeHaeding">
+                        <span>Flash Reward</span>
+                    </div>
+                    <div class="slideInfo">
+                        <span>User can get a chance/PER DAY win upto 20 to 100 free coins.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sliderBox">
+        <div class="sliderBtns">
+            <div class="sliderBtn left left2"></div>
+            <div class="sliderBtn right right2"></div>
+    
+        </div>
+<div class="descSliderHeading"><h1>For Creators</h1></div>
+        <div class="descSlider descSlide2">
+            <div class="slide slide2">
+                <div class="slideLeft">
+                    <div class="slideLeftPhoneImage">
+
+                    </div>
+                </div>
+                <div class="slideRight">
+                    <div class="sildeHaeding">
+                        <span>Donation Form</span>
+                    </div>
+                    <div class="slideInfo">
+                        <span>Gametosa provide content creators with a convenient and easy way to receive donations. Receiving and withdrawing donations via Indian Payment gateway.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slide  slide2">
+                <div class="slideLeft">
+                    <div class="slideLeftPhoneImage">
+                        
+                    </div>
+                </div>
+                <div class="slideRight">
+                    <div class="sildeHaeding">
+                        <span>Creator Membership</span>
+                    </div>
+                    <div class="slideInfo">
+                        <span>Exclusive features for the Creator and for their fans. Creator can now grow their revenue by 95% using Gametosa Membership features.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="slideLeft">
+                    <div class="slideLeftPhoneImage">
+                        
+                    </div>
+                </div>
+                <div class="slideRight">
+                    <div class="sildeHaeding">
+                        <span>Superchat</span>
+                    </div>
+                    <div class="slideInfo">
+                        <span>Exclusive features for the Creator and for their fans. Creator can now grow their revenue by 95% using Gametosa Superchat features.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="slideLeft">
+                    <div class="slideLeftPhoneImage">
+                        
+                    </div>
+                </div>
+                <div class="slideRight">
+                    <div class="sildeHaeding">
+                        <span>Creator Tool</span>
+                    </div>
+                    <div class="slideInfo">
+                        <span>Gametosa provide Creator Tools likes Alerts box, Overlays, Donation links and more.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="slideLeft">
+                    <div class="slideLeftPhoneImage">
+                        
+                    </div>
+                </div>
+                <div class="slideRight">
+                    <div class="sildeHaeding">
+                        <span>Brands Integration</span>
+                    </div>
+                    <div class="slideInfo">
+                        <span>Gametosa provide Brand campaign with a convenient and easy way with Creators.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+</body>
+</html>    <!---------------------------></--------------------------->
+            <div class="sliderBox">
+        <div class="descSlider descSlide1">
+            <div class="slide slide1">
+                <div class="slideLeft">
+                    <div class="slideLeftPhoneImage" style="background-image: url(../img/shopscreenshot.png);">
+
+                    </div>
+                </div>
+                <div class="slideRight">
+                    <div class="sildeHaeding">
+                        <span style="color: #0cade8;">2X POINTS</span> <span> ON GAMING PURCHASES IN THE GAMETOSA SHOP</span>
+                    </div>
+                    <div class="slideInfo">
+                        <span>Get boosted rewards for purchasing video games, gaming gift cards, and gear in the Gametosa Shop.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!---------------------------------------------------->
+    <div class="part2">
+        <div class="header">
+            <div class="heading" data-aos="fade-up"> <span class="heading">GAMES WE SUPPORT</span></div>
+            <div class="info" data-aos="fade-up"> <span>We are constantly expanding our Games Bundle. Stay tuned for your favourite games to feature.</span> </div>
+        </div>
+        <div class="list">
+            <div class="card">
+                <div class="pic"></div>
+            </div>
+            <div class="card">
+                <div class="pic"></div>
+            </div>
+            <div class="card">
+                <div class="pic"></div>
+            </div>
+            <div class="card">
+                <div class="pic"></div>
+            </div>
+            <div class="card">
+                <div class="pic"></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div style="background-image: linear-gradient(0deg, hsla(220, 80%, 6%, 1) 0%, hsla(220, 83%, 14%, 1) 47%, hsla(0, 0%, 0%, 1) 100%);">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.light-mode .partners>.partners-img>a>img{
+    filter: invert(0);
+  }
+  .light-mode .partners>h1{
+    color: #000;
+  }
+  .light-mode .partners-img>a{
+    color: #000;
+  }
+
+
+  /* ************************************* */
+
+
+        .partners{
+    width: 100%;
+    height: auto;
+    padding-inline: 10rem;
+  }
+
+  .partners>h1{
+    font-size: 3vw;
+    font-weight: 900;
+    color: #3EC1E6;
+  }
+  .partners>.partners-img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .partners>.partners-img>a>img{
+    filter: invert(1)  hue-rotate(180deg);
+    width: 180px;
+  }
+  .partners-img>a{
+    font-size: 20px;
+    font-weight: 600;
+    color: #dadada;
+    text-decoration:none;
+  }
+
+    /* MOBILE-VIEW */
+  @media only screen and (max-width: 600px) {
+    .partners{
+      width: 95%;
+      padding-inline: 0px;
+      margin-inline: auto;
+    }
+    .partners>.partners-img{
+      gap: 1vw;
+      justify-content: space-between;
+    }
+    .partners>.partners-img>a>img{
+      width: 100px;
+      
+    }
+    .partners>h1{
+      font-size: 10vw;
+    }
+  }
+
+
+</style>
+<body>
+    <div class="partners">
+        <h1 style="color: #3EC1E6;">Backed by</h1> 
+        <div class="partners-img">
+         <!-- <p style="color: #3EC1E6;">Powered by</p>-->
+          <img style="width: 200px; height: 150px;" src="https://gametosa.com/img/gcforstartup.png" alt="Google for Startups Cloud Program">
+          <img style="width: 100px;" src="https://gametosa.com/img/bwubi.png" alt="Brainware Incubation">
+          <img style="width: 160px;" src="https://gametosa.com/img/nvidia-inception-program-badge-rgb-for-screen.jpg" alt="Nvidia Inception">
+          <img style="width: 160px;" src="https://gametosa.com/img/msforstartupw.png" alt="Microsoft For Startup">
+          <img style="width: 150px; background-color:white; border-radius: 5%;" src="https://gametosa.com/img/dpiit.png" alt="DPIIT">
+          <img style="width: 160px;" src="https://gametosa.com/img/startupindia.png" alt="Startup India">
+          <img style="width: 180px; height: 80px; background-color:white; border-radius: 5%;" src="https://gametosa.com/img/stpiimage.png" alt="STPI IMAGE">
+          <img style="width: 160px;" src="https://gametosa.com/img/stpi.png" alt="STPI">
+          
+          
+          
+          <!--<img src="https://cdn.prod.website-files.com/6233b1211fd8d8b118920de1/623a4e8134ee04386106867e_partner-krafton.svg" alt="">
+          <img src="https://cdn.prod.website-files.com/6233b1211fd8d8b118920de1/64995d7460ef2bfe5170dc3b_Miniclip-new-p-500.png" alt="">
+          <img src="https://cdn.prod.website-files.com/6233b1211fd8d8b118920de1/623a4e81a2518ab999731763_netease.svg" alt="">
+          <img src="https://cdn.prod.website-files.com/6233b1211fd8d8b118920de1/623a4e82f1e47ee2a8f429da_partner-zynga.svg" alt="">
+          <img src="https://cdn.prod.website-files.com/6233b1211fd8d8b118920de1/64995dc2490f801ee1df6b26_Ubisoft-Logo-p-500.png" alt="">
+          <img src="https://cdn.prod.website-files.com/6233b1211fd8d8b118920de1/623a4e81155b26424cf4e6bc_partner-riot.svg" alt="">
+          <img src="https://cdn.prod.website-files.com/6233b1211fd8d8b118920de1/623a4e82869dda896178c16e_partner-t2.svg" alt="">
+          <img src="https://cdn.prod.website-files.com/6233b1211fd8d8b118920de1/64995da8d2f8a47134fd6bc3_Tencent_Logo-p-500.png" alt="">
+          <img src="https://cdn.prod.website-files.com/6233b1211fd8d8b118920de1/623a4e81155b261239f4e6c6_partner-tinder.svg" alt="">-->
+          <!-- <p>and more...</p> -->
+          <!-- <a href="">and more...</a>-->
+        </div>
+      </div>
+      <br><br>
+</body>
+</html>    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.light-mode .partners>.partners-img>a>img{
+    filter: invert(0);
+  }
+  .light-mode .partners>h1{
+    color: #000;
+  }
+  .light-mode .partners-img>a{
+    color: #000;
+  }
+
+
+  /* ************************************* */
+
+
+        .partners{
+    width: 100%;
+    height: auto;
+    padding-inline: 10rem;
+  }
+
+  .partners>h1{
+    font-size: 3vw;
+    font-weight: 900;
+    color: #3EC1E6;
+  }
+  .partners>.partners-img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .partners>.partners-img>a>img{
+    filter: invert(1)  hue-rotate(180deg);
+    width: 180px;
+  }
+  .partners-img>a{
+    font-size: 20px;
+    font-weight: 600;
+    color: #dadada;
+    text-decoration:none;
+  }
+
+    /* MOBILE-VIEW */
+  @media only screen and (max-width: 600px) {
+    .partners{
+      width: 95%;
+      padding-inline: 0px;
+      margin-inline: auto;
+    }
+    .partners>.partners-img{
+      gap: 1vw;
+      justify-content: space-between;
+    }
+    .partners>.partners-img>a>img{
+      width: 100px;
+      
+    }
+    .partners>h1{
+      font-size: 10vw;
+    }
+  }
+
+
+</style>
+<body>
+    <div class="partners">
+        <h1>Our Partners</h1>
+        <div class="partners-img">
+          <a href="https://gauravgo.com"> <img src="https://gametosa.com/store/img/gauravgo.png" alt=""></a>
+          <a href="https://narqubis.com"><img src="https://gametosa.com/store/img/narqubisblue.png" alt=""></a>
+          <a href="https://xsquads.com"><img src="https://gametosa.com/store/img/xsquads.png" alt=""></a>
+          <a href="https://metashot.in"><img src="https://gametosa.com/store/img/metashot.png" alt=""></a>
+          <a href="https://sherlockstudio.in"><img src="https://gametosa.com/store/img/sherlock.png" alt=""></a>
+          <!--<img src="https://cdn.prod.website-files.com/6233b1211fd8d8b118920de1/623a4e8134ee04386106867e_partner-krafton.svg" alt="">
+          <img src="https://cdn.prod.website-files.com/6233b1211fd8d8b118920de1/64995d7460ef2bfe5170dc3b_Miniclip-new-p-500.png" alt="">
+          <img src="https://cdn.prod.website-files.com/6233b1211fd8d8b118920de1/623a4e81a2518ab999731763_netease.svg" alt="">
+          <img src="https://cdn.prod.website-files.com/6233b1211fd8d8b118920de1/623a4e82f1e47ee2a8f429da_partner-zynga.svg" alt="">
+          <img src="https://cdn.prod.website-files.com/6233b1211fd8d8b118920de1/64995dc2490f801ee1df6b26_Ubisoft-Logo-p-500.png" alt="">
+          <img src="https://cdn.prod.website-files.com/6233b1211fd8d8b118920de1/623a4e81155b26424cf4e6bc_partner-riot.svg" alt="">
+          <img src="https://cdn.prod.website-files.com/6233b1211fd8d8b118920de1/623a4e82869dda896178c16e_partner-t2.svg" alt="">
+          <img src="https://cdn.prod.website-files.com/6233b1211fd8d8b118920de1/64995da8d2f8a47134fd6bc3_Tencent_Logo-p-500.png" alt="">
+          <img src="https://cdn.prod.website-files.com/6233b1211fd8d8b118920de1/623a4e81155b261239f4e6c6_partner-tinder.svg" alt="">-->
+          <!-- <p>and more...</p> -->
+           <a href="">and more...</a>
+        </div>
+      </div>
+</body>
+</html>        
+    </div>
+    <br>
+    <div class="roadmap" style="">
+        <h1>ROADMAP</h1>
+        <span>What's done & what's next: It's all here for you to explore.</span>
+        <a href="https://gametosa.canny.io"><div class="findout"><span>Find out</span></div></a>
+    </div>
+  <!-- download
+  
+  <div class="part3">
+        <div class="leftpart">
+            <div class="heading" data-aos="fade-up"><span>BE MORE AWESOME WITH GAMETOSA</span></div>
+            <div class="info" data-aos="fade-up"><span>Try the beta now</span></div>
+            <div class="box" data-aos="fade-up">
+                <div class="downloadCards">
+                    <div class="card">
+
+                        <div class="img"></div>
+                        <div class="info">
+                            <div class="heading">
+                                <span>Get it on</span>
+                            </div>
+                            <div class="name">
+                                <span>Play Store</span>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div class="rightpart">
+
+        </div>
+    </div>
+ <!--   creator community joining
+ 
+ <div class="newsletter">
+        <div class="container">
+
+            <div class="leftpart">
+
+            </div>
+            <div class="rightpart">
+                <form action="">
+                    <div class="heading">
+                        <h1>Join the Creator <br> Community</h1>
+                    </div>
+                        <span style="display: block;">Sign up for early content access, latest news and new features in the Gametosa
+                            Creators community</span>
+                            <div style="width: 100%;">
+
+                                <input type="text" placeholder="Enter email address">
+                                <input type="submit" class="submitBtn" value=" submit">
+                            </div>
+                </form>
+            </div>
+        </div>
+    </div> -->
+    
+    <br>
+    <div class="helpcenter">
+        <h1>STILL HAVE DOUBTS?</h1>
+        <span>Get in touch with the Support Team that would guide you better.</span>
+        <a href="https://gametosa.com/html%20pages/contact.php">
+        <div class="findout"><span>Help Center</span></div></a>
+    </div>
+    <br>
+  <!--  requitment
+  
+  <div class="adventure">
+        <div class="leftPart Part">
+            <h1>wanna start an adventure?</h1>
+            <span>Join us to experience a new generation of work ethos where your growth is the unit of our success and your efforts matter!</span>
+            <a href="https://gametosa.com/discord"><div class="joinUs">
+                <span>Join us</span>
+            </div></a>
+        </div>
+        <div class="rightPart Part"></div>
+    </div> -->
+    
+    
+    
+    
+    <!-- <footer class="footer">
+    <div class="leftpart">
+        <div class="upperpart">
+            <div class="heading">
+                <a href="https://gametosa.com"><div class="logo">
+
+                </div></a>
+                <div class="brandName">
+                    <a href="https://gametosa.com"><span>GAMETOSA</span></a>
+                </div>
+            </div>
+            <div class="info">
+                <span>Gametosa is the India's #1 mobile eSports Hosting and gaming platform that is empowering the
+                    rapidly rising community of Creators, Youtuber and eSports fans. Come, be part of a thriving
+                    community of passionate gamers, die-hard eSports fans and an ever-growing roster of gaming
+                    content creators, who are making a living by earning real money on the platform.</span>
+            </div>
+        </div>
+        <div class="lowerpart">
+            <div class="info">
+                <span>Copyright © 2024 Gametosa | All rights reserved.</span>
+            </div>
+        </div>
+    </div>
+    <div class="rightpart">
+        <div class="upperpart">
+            <div class="column">
+                <div class="row">
+                    <span>Home</span>
+                </div>
+                <div class="row">
+                    <a href="../html pages/aboutUs.php"> <span>About Us</span></a>
+
+                </div>
+                <div class="row">
+                    <a href="../html pages/blogs.php">
+                    
+                    <span>Blogs</span>
+                </div>
+                <div class="row">
+                    <a href="../html pages/prime.php">
+                    
+                    <span>Prime</span>
+                </div>
+            </div>
+            <div class="column">
+                <div class="row">
+                    <a href="../product">
+                    
+                    <span>Products</span>
+        
+                </div>
+                <div class="row">
+                    <a href="../html pages/career.php">
+                    
+                    <span>Career</span>
+        
+                </div>
+                <div class="row">
+                    <a href="../html pages/faq.php">
+
+                        <span>FAQs</span>
+                        
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="../html pages/tutorials.php">
+                    
+                    <span>Tutorials</span>
+                </div>
+            </div>
+            <div class="column">
+                <div class="row">
+                    <a href="../html pages/terms&conditions.html">
+
+                        <span>Terms&Condition</span>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="../html pages/privacyPolicy.html">
+
+                        <span>Privacy Policy</span>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="../html pages/refund&cancellation.php">
+
+                        <span>Refund and Cancellation</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="lowerpart">
+            <div class="socials">
+
+                <a href="https://discord.gg/XazEsnagMb">
+                    <div class="social"></div>
+                </a>
+                <a href="https://www.instagram.com/gametosa/">
+                    <div class="social"></div>
+                </a>
+                <a href="https://www.facebook.com/Gametosa">
+                    <div class="social"></div>
+                </a>
+
+                <a href="https://twitter.com/Gametosa?s=20&t=ECIlpZNE9Yc_0qM7MArJDQ">
+                    <div class="social"></div>
+                </a>
+
+                <a href="https://www.linkedin.com/company/gametosa/">
+                    <div class="social"></div>
+                </a>
+            </div>
+
+            <div class="copyright">
+                <span>Copyright © 2024 Gametosa | All rights reserved.</span>
+            </div>
+        </div>
+    </div>
+</footer> -->
+
+<!-- new footer -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .footer {
+      background: linear-gradient(to bottom, black, #061A40);
+      color: white;
+      padding: 10px 0;
+    }
+    .conta {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .column {
+      width: 100%;
+      padding: 0 10px;
+      margin-bottom: 20px;
+    }
+    
+    .quick-link{
+       list-style-type:none;
+       
+    }
+    
+      .quick-link>li>a{
+       text-decoration:none;
+       color:white;
+    }
+   
+   
+    @media(min-width: 768px) {
+      .column {
+        width: 48%;
+      }
+    }
+    @media(min-width: 1024px) {
+      .column {
+        width: 30%;
+      }
+    }
+    .logo {
+      width: 160px;
+      height: 60px;
+    }
+    .text-sm {
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .font-bold {
+      font-weight: bold;
+      font-size:18px;
+    }
+    .space-y-2 > *:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    .social {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .social img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<footer class="footer">
+  <div class="conta">
+    <div class="column">
+      <div class="flex items-center mb-4">
+        <a href="https://gametosa.com" class="mr-2">
+          <div class="logo">
+            <img src="../img/header.png" alt="logo" style="width:100%; height:100%;" />
+          </div>
+        </a>
+      </div>
+      <p class="text-sm">
+        Gametosa is India's #1 mobile Esports Hosting and gaming platform that is empowering the rapidly rising community of Creators, YouTubers, and eSports fans. Join our thriving community of passionate gamers and content creators, and start earning real money on the platform.
+      </p>
+    </div>
+    <div class="column">
+      <div class="grid">
+        <div>
+          <h6 class="font-bold">Quick Links</h6><br>
+          <ul class="space-y-2 quick-link">
+            <li ><a href="/" class="hover:underline">Home</a></li>
+            <li ><a href="../html pages/aboutUs.php" class="hover:underline">About Us</a></li>
+            <li ><a href="../html pages/blogs.php" class="hover:underline">Blogs</a></li>
+            <li ><a href="../html pages/prime.php" class="hover:underline">Prime</a></li><br>
+          </ul>
+        </div>
+        <div>
+          <h6 class="font-bold">Company</h6><br>
+          <ul class="space-y-2 quick-link">
+            <li ><a href="../product" class="hover:underline">Products</a></li>
+            <li><a href="../html pages/career.php" class="hover:underline">Career</a></li>
+            <li><a href="../html pages/faq.php" class="hover:underline">FAQs</a></li>
+            <li><a href="../html pages/tutorials.php" class="hover:underline">Tutorials</a></li>
+          </ul>
+        </div>
+        <div>
+          <h6 class="font-bold">Policies</h6><br>
+          <ul class="space-y-2 quick-link">
+            <li><a href="../html pages/terms&conditions.html" class="hover:underline">Terms & Conditions</a></li>
+            <li><a href="../html pages/privacyPolicy.html" class="hover:underline">Privacy Policy</a></li>
+            <li><a href="../html pages/refund&cancellation.php" class="hover:underline">Refund and Cancellation</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <h6 class="font-bold">Follow Us</h6>
+      <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+        <a href="https://discord.gg/XazEsnagMb" target="_blank" class="social">
+          <img src="https://cdn.freebiesupply.com/logos/large/2x/discord-logo-png-transparent.png" alt="discord" />
+        </a>
+        <a href="https://www.facebook.com/gametosa/" target="_blank" class="social">
+          <img src="https://freepnglogo.com/images/all_img/1713419166FB_Logo_PNG.png" alt="facebook" />
+        </a>
+        <a href="https://www.instagram.com/Gametosa" target="_blank" class="social">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="instagram" />
+        </a>
+        <a href="https://twitter.com/Gametosa?s=20&t=ECIlpZNE9Yc_0qM7MArJDQ" target="_blank" class="social">
+          <img src="https://static.vecteezy.com/system/resources/previews/027/395/710/non_2x/twitter-brand-new-logo-3-d-with-new-x-shaped-graphic-of-the-world-s-most-popular-social-media-free-png.png" alt="twitter" />
+        </a>
+        <a href="https://www.linkedin.com/company/gametosa/" target="_blank" class="social">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="linkedin" />
+        </a>
+      </div>
+      <p style="font-size: 16px; font-weight: 600;">&copy; 2025 Gametosa | All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<center>
+<!--  <p style="color: gray; font-size: 12px;">Gametosa Esports & Gaming is not endorsed any game publisher or developer whose game is supported on the Gametosa Esports & Gaming app. All content, games titles, trade names and/or trade dress, trademarks, artwork and associated imagery are trademarks and/or copyright material of their respective owners. </p>
+-->
+<p style="color: gray; font-size: 12px;">All trademarks, logos, and brand names displayed on this website belong to their respective owners. Their use here does not imply endorsement unless specified. If any concerns arise, please contact us.</p>
+</center>
+</body>
+</html>    <script src="./script/index.js"></script>
+    <script src="./script/slider.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,
+            duration: 1000
+        });
+    </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-17GK6HDFK6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-17GK6HDFK6');
+</script>
+<!-- Google tag (gtag.js) -->    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-17GK6HDFK6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-17GK6HDFK6');
+</script>
+
+<script>
+!function(t,e,n,s,a,c,i,o,p){t.AppsFlyerSdkObject=a,t.AF=t.AF||function(){(t.AF.q=t.AF.q||[]).push([Date.now()].concat(Array.prototype.slice.call(arguments)))},t.AF.id=t.AF.id||i,t.AF.plugins={},o=e.createElement(n),p=e.getElementsByTagName(n)[0],o.async=1,o.src="https://websdk.appsflyer.com?"+(c.length>0?"st="+c.split(",").sort().join(",")+"&":"")+(i.length>0?"af_id="+i:""),p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","banners",{banners: {key: "d54a6826-1ec7-44f3-9a84-2d926a6d6201"}});
+AF('banners', 'showBanner')
+</script>
+</body>
+
+</html>

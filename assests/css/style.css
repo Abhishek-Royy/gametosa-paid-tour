@@ -1,0 +1,619 @@
+/* RESET & BASE */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --primary: #00ffcc;
+  --primary-dark: #00e6b8;
+  --secondary: #00b7ff;
+  --dark: #0d0d0d;
+  --darker: #090909;
+  --light: #f1f1f1;
+  --gray: #999;
+  --border-color: #222;
+  
+  /* For mobile vh fix */
+  --vh: 1vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: var(--dark);
+  color: var(--light);
+  line-height: 1.6;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+a { text-decoration: none; color: var(--secondary); transition: all 0.3s ease; }
+a:hover { color: var(--primary); }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+[class*="col-"] {
+  padding: 0 15px;
+}
+
+.col {
+  flex: 1 0 0%;
+}
+
+/* Utility Classes */
+.text-center { text-align: center; }
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+/* HEADER */
+.main-header, .cyber-header {
+  background: var(--darker);
+  padding: 15px 0;
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+/* Header states for scroll detection */
+.main-header.scrolled, .cyber-header.scrolled {
+  background: rgba(9, 9, 9, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 10px 0;
+}
+
+.main-header.scroll-down, .cyber-header.scroll-down {
+  transform: translateY(-100%);
+}
+
+.main-header.scroll-up, .cyber-header.scroll-up {
+  transform: translateY(0);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 24px;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--light);
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 255, 204, 0.3);
+}
+
+.navbar-toggler.active {
+  color: var(--primary);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li a {
+  font-size: 16px;
+  padding: 10px;
+  color: var(--light);
+  display: block;
+}
+
+.navbar li a:hover {
+  color: var(--primary);
+}
+
+.btn-login, .btn-primary {
+  background: var(--secondary);
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: var(--light);
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover, .btn-primary:hover {
+  background: var(--primary);
+  color: var(--darker);
+  transform: translateY(-2px);
+}
+
+/* HERO SECTION */
+.hero {
+  height: 90vh; /* We'll use JS to fix this for mobile */
+  height: calc(var(--vh, 1vh) * 90);
+  background: url('hero-bg.jpg') center center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: var(--light);
+  margin-bottom: 1rem;
+}
+
+.hero .highlight {
+  color: var(--primary);
+}
+
+.hero p {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  margin: 1rem auto;
+  max-width: 600px;
+}
+
+.hero a.btn {
+  margin-top: 1.5rem;
+  display: inline-block;
+  background: var(--secondary);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: var(--light);
+  transition: all 0.3s ease;
+}
+
+.hero a.btn:hover {
+  background: var(--primary);
+  color: var(--darker);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 255, 204, 0.3);
+}
+
+/* TOURNAMENTS */
+.tournaments-section {
+  padding: 60px 0;
+  background: #1c1c1c;
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  color: var(--primary);
+  margin-bottom: 40px;
+}
+
+.tournament-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tournament-card {
+  background: #2a2a2a;
+  padding: 25px;
+  border-left: 5px solid var(--secondary);
+  border-radius: 10px;
+  flex: 1 1 300px;
+  max-width: 100%;
+  transition: all 0.3s ease;
+}
+
+.tournament-card:hover {
+  transform: translateY(-5px);
+  background-color: #333;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tournament-card h3 {
+  margin-bottom: 10px;
+  color: var(--light);
+}
+
+.tournament-card p {
+  color: #ccc;
+  margin: 5px 0;
+}
+
+.tournament-card .btn {
+  margin-top: 15px;
+  display: inline-block;
+  background-color: var(--secondary);
+  color: var(--light);
+  padding: 10px 18px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.tournament-card .btn:hover {
+  background-color: var(--primary);
+  color: var(--darker);
+  transform: translateY(-2px);
+}
+
+/* FOOTER */
+.footer {
+  background: #121212;
+  padding: 25px 0;
+  text-align: center;
+  font-size: 14px;
+  color: var(--gray);
+}
+
+.footer a {
+  color: var(--secondary);
+}
+
+.footer a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+/* FORMS */
+.form-section {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background: #1c1c1c;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h2 {
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.75rem;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container form input,
+.form-container form textarea,
+.form-container form select {
+  margin-bottom: 15px;
+  padding: 12px 15px;
+  background: #2a2a2a;
+  border: 1px solid #333;
+  border-radius: 5px;
+  color: var(--light);
+  font-family: inherit;
+}
+
+.form-container form input:focus,
+.form-container form textarea:focus,
+.form-container form select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(0, 255, 204, 0.2);
+}
+
+.form-container form .btn {
+  background: var(--secondary);
+  color: var(--light);
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.form-container form .btn:hover {
+  background: var(--primary);
+  color: var(--darker);
+  transform: translateY(-2px);
+}
+
+.link-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* DASHBOARD */
+.dashboard {
+  padding: 60px 0;
+}
+
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #1c1c1c;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--light);
+}
+
+/* AUTH */
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  background: url('hero-bg.jpg') center center/cover no-repeat;
+  position: relative;
+}
+
+.auth-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.auth-box {
+  background: #1c1c1c;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  padding: 30px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.auth-box .form {
+  display: block;
+  width: 100%;
+}
+
+.auth-box .login-form {
+  display: block;
+}
+
+.auth-box .register-form {
+  display: none;
+}
+
+.auth-box.show-register .login-form {
+  display: none;
+}
+
+.auth-box.show-register .register-form {
+  display: block;
+}
+
+.auth-box h2 {
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.75rem;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  background: #2a2a2a;
+  border: 1px solid #333;
+  border-radius: 5px;
+  color: var(--light);
+  font-family: inherit;
+}
+
+.auth-box input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.auth-box .btn {
+  width: 100%;
+  background: var(--secondary);
+  color: var(--light);
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.auth-box .btn:hover {
+  background: var(--primary);
+  color: var(--darker);
+}
+
+.switch-form {
+  margin-top: 20px;
+  text-align: center;
+  color: var(--gray);
+}
+
+.switch-form span {
+  color: var(--secondary);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.switch-form span:hover {
+  color: var(--primary);
+}
+
+/* Custom Elements */
+.cyber-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+      linear-gradient(var(--primary-dark) 1px, transparent 1px),
+      linear-gradient(90deg, var(--primary-dark) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: center;
+  opacity: 0.03;
+  animation: gridMove 20s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes gridMove {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(50px); }
+}
+
+/* Remove older media queries - they are now in responsive.css */
+
+/* Hero Slider Styles */
+#heroSlider .carousel-item {
+    transition: transform 1.5s ease, opacity 1.5s ease;
+    background-size: cover;
+    background-position: center;
+}
+
+#heroSlider .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--neon);
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    border: 1px solid var(--neon);
+    margin: 0 5px;
+}
+
+#heroSlider .carousel-indicators button.active {
+    opacity: 1;
+    background-color: var(--neon);
+    box-shadow: 0 0 8px var(--neon);
+}
+
+#heroSlider .carousel-control-prev,
+#heroSlider .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    margin: 0 15px;
+}
+
+#heroSlider .carousel-control-prev:hover,
+#heroSlider .carousel-control-next:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 15px var(--neon);
+}
+
+#heroSlider .glitch-text {
+    position: relative;
+    display: inline-block;
+}
+
+#heroSlider .float-element {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
